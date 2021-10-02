@@ -1,0 +1,17 @@
+/*
+    introduce antd custom dark style
+*/
+
+@import './global.less';
+@import '~antd/dist/antd.dark.less';
+.main-menu{
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 65px;
+    //responsive layout
+    @media screen and (max-width : 750px) {
+        .hidden()
+    }
+}  
