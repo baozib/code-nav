@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Breadcrumb , Input } from 'antd'
+import { Layout, Menu, Breadcrumb , Input , Avatar, Button} from 'antd'
 import { 
     HomeOutlined,
     TeamOutlined,
     GlobalOutlined,
-    BarsOutlined
+    BarsOutlined,
+    UserOutlined 
 } from '@ant-design/icons'
 import './index.less'
 
@@ -44,10 +45,11 @@ export default class MyHeader extends Component<IProp> {
                             我的
                         </Menu.Item>
                     </Menu>
-                    <Search placeholder="input search text"  enterButton />
                 </div>
                 <div className='header-right'>
-
+                    <Search placeholder="搜索学习资源"  enterButton className='search'/>
+                    {/* <Button type="primary" className='recommend'>推荐</Button> */}
+                    <Avatar icon={<UserOutlined />} className='avatar'/>
                 </div>
             </Header>
         )

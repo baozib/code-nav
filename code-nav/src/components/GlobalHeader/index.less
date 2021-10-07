@@ -28,6 +28,9 @@
             color: @primary-color;
             font-weight: 400;
             vertical-align: top;
+            @media screen and (max-width:750px) {
+                visibility:hidden;
+            }
         }
     }
 
@@ -40,7 +43,38 @@
             background: @primary-background;
             font-size: @header-font !important;
         }
+        @media screen and (max-width:1130px) {
+            width: 550px;
+        }
+        @media screen and (max-width:1070px) {
+            width: 500px;
+        }
+        @media screen and (max-width:940px) {
+            width: 400px;
+        }
+        @media screen and (max-width:790px) {
+            width: 300px;
+        }
+        @media screen and (max-width:750px) {
+            visibility:hidden;
+        }
+    }
+    .header-right{
+        position: absolute;
+        width: 50%;
+        float: left;
+        right: 10px;
+        height: 40px;
 
+        .search{
+             width: 80%;
+        }
+        // .recommend {
+        //     position: absolute;
+        //     margin-left: 10px;
+        // }
+        
+        
     }
 
 }
